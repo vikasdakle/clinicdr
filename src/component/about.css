@@ -1,0 +1,72 @@
+/* Container for the entire About section */
+.about-container {
+    height: auto;
+    overflow: hidden;
+}
+
+/* Left Side Styling */
+.about-left {
+    background-color: #003f8b;
+    color: #fff;
+    padding: 30px;
+    background-image: url('https://source.unsplash.com/random/1920x1080');
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Set to 60% of the viewport height */
+}
+
+/* Right Side Styling */
+.about-right {
+    min-height: 60vh; /* Set to 60% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensure the image covers the full container */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-left,
+    .about-right {
+        min-height: 40vh; /* Adjust height for smaller screens */
+    }
+
+    .about-content {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-left,
+    .about-right {
+        min-height: 30vh; /* Further reduce height for very small screens */
+    }
+
+    .about-content {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .about-right img {
+        height: auto;
+        width: 100%;
+    }
+    .cir {
+width: 90px;
+ height: 50px;
+  objectFit: cover;
+   /* backgroundColor: red; */
+   rounded:circle ;
+    }
+}
+
+

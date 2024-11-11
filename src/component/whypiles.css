@@ -1,0 +1,31 @@
+.text-image-container {
+    display: flex;
+    align-items: stretch;
+}
+
+.text-section,
+.image-section {
+    min-height: 100%; /* Ensures both divs have the same height */
+}
+
+.text-section {
+    /* background-color: rgb(37,191,241); Bootstrap primary color */
+    /* background-Color:rgb(47,67,126); */
+    background-Color: #003f8b;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-section {
+    display: flex;
+    align-items: stretch;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
