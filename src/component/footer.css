@@ -1,6 +1,6 @@
 .map-responsive {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -22,10 +22,11 @@
 /* Mobile View Specific Styling */
 @media (max-width: 599px) {
     .map-responsive {
-        display: flex; /* Flexbox for centering on mobile */
+        display: flex;  
         justify-content: center; /* Horizontal center */
-        align-items: center; /* Vertical center */
-        padding-bottom: 0; /* Adjust padding for mobile */
-        height: 250px; /* Set a fixed height for the iframe on mobile */
+        align-items: center;  
+         padding-bottom: 0; 
+        height: 250px;   
+        width:auto;
     }
 }

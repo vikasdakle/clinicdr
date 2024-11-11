@@ -27,7 +27,7 @@ const Footer = () => {
                     {/* Contact Section */}
                     <div className="col-12 col-md-4 footer-section mb-4">
                         <h5 className="text-light" style={{ fontSize: "22px" }}>Contact</h5>
-                        <p className="footer-phone text-light" style={{ fontSize: "18px" }}>
+                        <p className="footer-phone text-light" style={{ fontSize: "20px" }}>
                             <i className="fa fa-phone-alt me-2"></i>+91 8788990261
                         </p>
                     </div>
@@ -51,10 +51,12 @@ const Footer = () => {
             <div className="container">
                 <div className="d-flex flex-column flex-md-row justify-content-center align-items-center text-center w-100">
                     <div className="text-light mb-1 mb-md-0" style={{ fontSize: "16px" }}>
-                        &copy; <a className="text-light" href="#">Tech Surya IT Solution</a>, All Rights Reserved.
+                        &copy; <a className="text-light" href="https://techsuryaitsolution.com/">Tech Surya IT Solution</a>, All Rights Reserved.
                     </div>
                     <div className="ms-md-2 mt-2 mt-md-0">
-                        <img className="img-fluid footer-logo" style={{ height: "40px" }} src={footerlogo} alt="Tech Surya" />
+                        <a href="https://techsuryaitsolution.com/">
+                            <img className="img-fluid footer-logo" style={{ height: "40px" }} src={footerlogo} alt="Tech Surya" />
+                        </a>
                     </div>
                 </div>
             </div>

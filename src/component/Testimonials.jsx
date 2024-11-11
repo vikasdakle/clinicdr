@@ -72,10 +72,10 @@ const Testimonials = () => {
             <div className="container-fluid">
                 <div className="row d-flex justify-content-center testimonial-pos ">
                     <div className="col-md-12 pt-4 d-flex justify-content-center">
-                        <h2 style={{ color: 'white', fontSize: "2rem", marginBottom: "60px" }} className='fw-bold'>Testimonials</h2>
+                        <h2 style={{ color: 'white', fontSize: "2rem", marginBottom: "80px" }} className='fw-bold'>Testimonials</h2>
                     </div>
                     <div className="col-md-12 d-flex justify-content-center">
-                        <h2>Our Client Says</h2>
+                        {/* <h2>Our Client Says</h2> */}
                     </div>
                 </div>
                 <section className="home-testimonial-bottom">

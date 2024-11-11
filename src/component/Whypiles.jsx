@@ -53,7 +53,7 @@ const Whypiles = ({ testimonialsRef }) => {
                                 <p className='text-light'>बद्धकोष्ठता</p>
                             </div>
                         </div> */}
-                        <button className="btn btn-light btn-lg w-50 rounded-0 mt-4 fw-bold" style={{ color: "rgb(0,63,139)" }} onClick={() => scrollToSection(testimonialsRef)}>Review <GoArrowRight /></button>
+                        <button className="btn btn-light btn-lg w-50 wh rounded-0 mt-4 fw-bold" style={{ color: "rgb(0,63,139)" }} onClick={() => scrollToSection(testimonialsRef)}>Review <GoArrowRight /></button>
                     </div>
 
                     {/* Image Section */}
