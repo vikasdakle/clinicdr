@@ -16,7 +16,6 @@ const App = () => {
     <Services />
     <Whypiles testimonialsRef={testimonialsRef} />
     <div ref={testimonialsRef}><Testimonials /></div>
-    {/* <Testimonials /> */}
     <Footer />
 
   </>
