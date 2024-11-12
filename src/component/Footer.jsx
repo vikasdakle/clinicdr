@@ -20,7 +20,7 @@ const Footer = () => {
                     {/* Services Section */}
                     <div className="col-12 col-md-4 footer-section mb-4">
                         <h5 className="text-light" style={{ fontSize: "22px" }}>Services</h5>
-                        <a className="btn btn-link text-light p-0 d-block mb-2" style={{ fontSize: "16px" }} href="#">मुलव्याध उपचार</a>
+                        <a className="btn btn-link text-light p-0 d-block mb-2" style={{ fontSize: "16px" }} href="#">मूळव्याध उपचार</a>
                         <a className="btn btn-link text-light p-0 d-block mb-2" style={{ fontSize: "16px" }} href="#">वैद्यकीय तपासणी</a>
                         <a className="btn btn-link text-light p-0 d-block" style={{ fontSize: "16px" }} href="#">आपत्कालीन सेवा</a>
                     </div>
