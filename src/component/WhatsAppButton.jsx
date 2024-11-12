@@ -4,7 +4,7 @@ import whatsappIcon from '../assets/whapicon.png'; // Replace with your icon pat
 const WhatsAppButton = () => {
     return (
         <a
-            href="https://wa.me/8788990261" // Add your WhatsApp number here, e.g., 'https://wa.me/your-number'
+            href="https://wa.me/918788990261" // Add your WhatsApp number here, e.g., 'https://wa.me/your-number'
             target="_blank"
             rel="noopener noreferrer"
             style={styles.whatsappButton}
