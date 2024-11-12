@@ -14,7 +14,7 @@ const Whypiles = ({ testimonialsRef }) => {
         });
     };
     return (
-        <div className="dentist-section py-5 mt-5 mb-5 container">
+        <div className="dentist-section py-5 mt-5 mb-4 container">
             <div className="container">
                 <div className="row align-items-stretch g-0 text-image-container">
                     {/* Text Section */}

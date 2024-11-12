@@ -72,7 +72,7 @@ const Testimonialtwo = () => {
         <section className="home-testimonial ">
             <div className="container-fluid">
                 <div className="row d-flex justify-content-center testimonial-pos ">
-                    <div className="col-md-12 pt-4 d-flex justify-content-center">
+                    <div className="col-md-12 pt-4 d-flex mb-5 justify-content-center">
                         <h2 style={{ color: "rgb(0,63,139)", fontSize: "2rem", marginBottom: "80px" }} className='fw-bold'>Testimonials</h2>
                     </div>
                     <div className="col-md-12 d-flex justify-content-center">
@@ -85,21 +85,14 @@ const Testimonialtwo = () => {
                             {data.map((testimonial, index) => (
                                 <div className="col-md-4 style-3" key={index}>
                                     <div className="tour-item">
-                                        <div className="tour-desc bg-light shadow md:p-0 p-5" style={{ borderRadius: "0px" }}>
-                                            <div className="tour-text color-grey-3 text-center" style={{ fontSize: "19px", fontFamily: "sans-serif" }}>
+                                        <div className="tour-desc bg-light shadow md:p-0 p-5">
+                                            <div className="tour-text color-grey-3 text-center">
                                                 &ldquo;{testimonial.message}&rdquo;
                                             </div>
-                                            {/* <div className="d-flex justify-content-center pt-2 pb-2">
-                                                <img
-                                                    className="tm-people"
-                                                    src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" // Update with actual images
-                                                    alt={testimonial.name}
-                                                />
-                                            </div> */}
-                                            <div className="link-name d-flex justify-content-center">
+                                            <div className="link-name d-flex justify-content-center mt-3">
                                                 {testimonial.name}
                                             </div>
-                                            <div className="link-position d-flex justify-content-center">
+                                            <div className="link-position d-flex justify-content-center mt-2">
                                                 <div>
                                                     {[...Array(testimonial.rate)].map((_, i) => (
                                                         <FaStar key={i} color="#FFD700" size={20} />
@@ -109,6 +102,7 @@ const Testimonialtwo = () => {
                                         </div>
                                     </div>
                                 </div>
+
                             ))}
                         </Slider>
                     </div>
