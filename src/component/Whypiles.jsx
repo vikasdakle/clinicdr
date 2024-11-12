@@ -14,7 +14,7 @@ const Whypiles = ({ testimonialsRef }) => {
         });
     };
     return (
-        <div className="dentist-section py-5 mt-5 container">
+        <div className="dentist-section py-5 mt-5 mb-5 container">
             <div className="container">
                 <div className="row align-items-stretch g-0 text-image-container">
                     {/* Text Section */}
@@ -53,9 +53,9 @@ const Whypiles = ({ testimonialsRef }) => {
                                 <p className='text-light'>बद्धकोष्ठता</p>
                             </div>
                         </div> */}
-                        <button className="btn btn-light btn-lg w-50 wh rounded-0 mt-4 fw-bold" style={{ color: "rgb(0,63,139)" }} onClick={() => scrollToSection(testimonialsRef)}>Review <GoArrowRight /></button>
+                        <button className="btn btn-light btn-lg w-50 wh rounded-0 mt-4 fw-bold" style={{ color: "rgb(0,63,139)" }} onClick={() => scrollToSection(testimonialsRef)}>Review </button>
                     </div>
-
+                    {/* <GoArrowRight /> */}
                     {/* Image Section */}
                     <div className="col-md-5 image-section">
                         <img src={pilestreatment} alt="Dentist treating patient" className="img-fluid" />

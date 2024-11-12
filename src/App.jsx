@@ -6,17 +6,36 @@ import Services from './component/Services'
 import Testimonials from './component/Testimonials'
 import Footer from './component/Footer'
 import Whypiles from './component/Whypiles'
+import Gallery from './component/Gallery'
+import Testimonialtwo from './component/Testimonialtwo'
+
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import TestimonialPage from './secondfolder/TestimonialPage'
+
 
 const App = () => {
+
+
   const testimonialsRef = useRef(null);
   return <>
     <WhatsAppButton />
-    <Home testimonialsRef={testimonialsRef} />
-    <About />
-    <Services />
-    <Whypiles testimonialsRef={testimonialsRef} />
-    <div ref={testimonialsRef}><Testimonials /></div>
-    <Footer />
+    <BrowserRouter>
+      {/* <Home testimonialsRef={testimonialsRef} /> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        {/* <Route path='/' element={<About />} /> */}
+
+        <Route path='/review' element={<TestimonialPage />} />
+      </Routes>
+    </BrowserRouter>
+    {/* <Home testimonialsRef={testimonialsRef} /> */}
+    {/* <About /> */}
+    {/* <Services /> */}
+    {/* <Whypiles testimonialsRef={testimonialsRef} /> */}
+    {/* <div ref={testimonialsRef}><Testimonials /></div> */}
+    {/* <Testimonialtwo /> */}
+    {/* <Gallery /> */}
+    {/* <Footer /> */}
 
   </>
 }

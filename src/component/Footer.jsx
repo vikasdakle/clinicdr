@@ -1,10 +1,11 @@
 import React from 'react';
 import footerlogo from '../assets/footerlogotechsurya.png';
-import './footer.css'
+import './footer.css';
+import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className="container-fluid footer mt-5 pt-5" style={{ backgroundColor: "rgb(0,63,139)" }}>
+        <div className="container-fluid footer pt-5 pb-5" style={{ backgroundColor: "rgb(0,63,139)" }}>
             <div className="container">
                 <div className="row footer-content">
                     {/* Address Section */}
@@ -25,12 +26,25 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Section */}
-                    <div className="col-12 col-md-4 footer-section mb-4">
+                    <div className="col-12 col-md-4 footer-section mb-4  ">
                         <h5 className="text-light" style={{ fontSize: "22px" }}>Contact</h5>
                         <p className="footer-phone text-light" style={{ fontSize: "20px" }}>
                             <i className="fa fa-phone-alt me-2"></i>+91 8788990261
                         </p>
+                        <div className="footer-icons mt-2">
+                            <a href="https://wa.me/918788990261" target="_blank" rel="noopener noreferrer" className="icon-circle whatsapp-icon">
+                                <FaWhatsapp size={20} />
+                            </a>
+                            {/* <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="icon-circle instagram-icon">
+                                <FaInstagram size={20} />
+                            </a> */}
+                            <a href="https://www.facebook.com/dinesh.jagtap21/" target="_blank" rel="noopener noreferrer" className="icon-circle facebook-icon">
+                                <FaFacebook size={20} />
+                            </a>
+                        </div>
+
                     </div>
+
 
                     {/* Map Section */}
                     <div className="col-12 footer-section map-container mb-4">

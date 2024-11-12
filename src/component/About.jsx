@@ -2,9 +2,14 @@ import React from 'react';
 import aboutimg from '../assets/aboutimg.jpeg'; // Replace with your actual image path
 import aboutherorm from '../assets/aboutherorm.png'; // Replace with your actual image path
 import './about.css'; // Import the CSS file
+import Services from './Services';
+import Testimonialtwo from './Testimonialtwo';
+import Whypiles from './Whypiles';
+import Gallery from './Gallery';
+import Footer from './Footer';
 
 const About = () => {
-    return (
+    return <>
         <div className="about-container">
             <div className="row g-0">
                 {/* Left Side */}
@@ -44,7 +49,12 @@ const About = () => {
                 </div>
             </div>
         </div>
-    );
+        <Services />
+        <Whypiles />
+        <Testimonialtwo />
+        <Gallery />
+        <Footer />
+    </>
 };
 
 export default About;

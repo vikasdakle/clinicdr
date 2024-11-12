@@ -3,11 +3,19 @@ import herohomepdimg from '../assets/herohomepdimg.jpg';
 import bglogoremove from '../assets/newlogoOne.jpeg';
 import newheroimgOne from '../assets/newheroimgOne.jpg';
 import newdoctor from '../assets/newdoctor.png';
-import newherocanva from '../assets/newheroOnecanva.jpg'
+import newherocanva from '../assets/newheroOnecanva.jpg';
 import './home.css';  // Make sure the CSS file is correctly linked
+import mobileimg from '../assets/spinehospitalmobile.jpg';
+import { Link, useNavigate } from 'react-router-dom';
+import Services from './Services';
+import About from './About';
+// import mobileimg from '../assets/spinehospitalmobileresponsiveTwo.jpg'
+
+
 
 
 const Home = ({ testimonialsRef }) => {
+    const navigate = useNavigate()
     // const testimonialsRef = useRef(null);
     const scrollToSection = (ref) => {
         window.scrollTo({
@@ -55,9 +63,9 @@ const Home = ({ testimonialsRef }) => {
                             padding: "5px 10px", // Adjust padding for pill shape
                             textAlign: "center",
                             marginLeft: "10px"
-                        }} onClick={() => scrollToSection(testimonialsRef)}>
+                        }} onClick={() => navigate('/review')}>
                         View Review
-                        <i className="fa fa-arrow-right ms-2"></i>
+                        {/* <i className="fa fa-arrow-right ms-2"></i> */}
                     </a>
                 </a>
 
@@ -111,7 +119,7 @@ const Home = ({ testimonialsRef }) => {
                         View Review
                         <i className="fa fa-arrow-right ms-2"></i>
                     </a> */}
-                    <a href="/"
+                    <a
                         className="nav-item nav-link active"
                         style={{
                             fontSize: "19px",
@@ -121,9 +129,9 @@ const Home = ({ testimonialsRef }) => {
                             padding: "10px 20px", // Adjust padding for pill shape
                             textAlign: "center",
                             marginLeft: "10px"
-                        }}>
+                        }} onClick={() => navigate('/review')}>
                         View Review
-                        <i className="fa fa-arrow-right ms-2"></i>
+                        {/* <i className="fa fa-arrow-right ms-2"></i> */}
                     </a>
                 </div>
             </nav>
@@ -164,11 +172,12 @@ const Home = ({ testimonialsRef }) => {
                             नाव नोंदणीसाठी संपर्क : +91 8788990261
                         </a>
                     </div>
+                    {/* () => scrollToSection(testimonialsRef) */}
                     {/* <a href="/appointment" style={{ borderRadius: "50px", padding: "10px 20px", textAlign: "center", }} className="btn btn-primary  py-2 px-lg-4 d-none d-lg-block ms-3">
                         View Review
                         <i className="fa fa-arrow-right ms-2"></i>
                     </a> */}
-                    <button
+                    <a
                         className="nav-item nav-link active fw-bold"
                         style={{
                             fontSize: "19px",
@@ -178,21 +187,30 @@ const Home = ({ testimonialsRef }) => {
                             padding: "10px 20px", // Adjust padding for pill shape
                             textAlign: "center",
                             marginLeft: "10px"
-                        }} onClick={() => scrollToSection(testimonialsRef)}>
+                        }} onClick={() => navigate('/review')}>
                         View Review
-                        <i className="fa fa-arrow-right ms-2"></i>
-                    </button>
+                        {/* <i className="fa fa-arrow-right ms-2"></i> */}
+                    </a>
                 </div>
             </nav>
 
             {/* Hero Image Section */}
-            <div className="hero-section position-relative">
+            <div className="hero-section mhOne position-relative full-height">
                 <img
                     src={newherocanva}
                     alt="Hero Background"
                     className="hero-image img-fluid"
                 />
             </div>
+            <div className="hero-section mhTwo position-relative full-height">
+                <img
+                    src={mobileimg}
+                    alt="Hero Background"
+                    className="hero-image img-fluid"
+                />
+            </div>
+
+            <About />
         </>
     );
 }

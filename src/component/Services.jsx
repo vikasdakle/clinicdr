@@ -2,6 +2,7 @@ import React from "react";
 import { FaClinicMedical, FaStethoscope, FaAmbulance, FaHospital, FaBriefcaseMedical, FaHeartbeat } from "react-icons/fa";
 import './services.css';
 import bgImage from '../assets/aboutimg.jpeg';
+import serviceTwo from '../assets/servicesTwo.png'
 
 const Services = () => {
     const services = [
@@ -15,9 +16,9 @@ const Services = () => {
 
     return (
         <div
-            className="services-section mt-5"
+            className="services-section mt-5 mb-5"
             style={{
-                backgroundImage: `url(${bgImage})`,
+                backgroundImage: `url(${serviceTwo})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 padding: "80px 0",
