@@ -86,7 +86,7 @@ const Testimonialtwo = () => {
                                 <div className="col-md-4 style-3" key={index}>
                                     <div className="tour-item">
                                         <div className="tour-desc bg-light shadow md:p-0 p-5">
-                                            <div className="tour-text color-grey-3 text-center">
+                                            <div className="tour-text color-grey-3 text-center" style={{ fontSize: "16px" }}>
                                                 &ldquo;{testimonial.message}&rdquo;
                                             </div>
                                             <div className="link-name d-flex justify-content-center mt-3">

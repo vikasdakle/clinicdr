@@ -5,13 +5,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import one from '../assets/gallerycss/One.jpg';
-import two from '../assets/gallerycss/Two.jpg';
+// import two from '../assets/gallerycss/Two.jpg';
 import three from '../assets/gallerycss/Three.jpg';
-import four from '../assets/gallerycss/Four.jpg';
+// import four from '../assets/gallerycss/Four.jpg';
 import five from '../assets/gallerycss/Five.jpg';
 import six from '../assets/gallerycss/Six.jpg';
 import seven from '../assets/gallerycss/Seven.jpg';
-// import eight from '../assets/gallerycss/Eight.jpg';
+import eight from '../assets/gallerycss/Eight.jpg';
 // import nine from '../assets/gallerycss/Nine.jpg';
 // import ten from '../assets/gallerycss/Ten.jpg';
 // import eleven from '../assets/gallerycss/Eleven.jpg';
@@ -22,13 +22,13 @@ import './gallery.css';
 
 const images = [
     { id: 1, src: one, alt: 'Image 1' },
-    { id: 2, src: two, alt: 'Image 2' },
+    // { id: 2, src: two, alt: 'Image 2' },
     { id: 3, src: three, alt: 'Image 3' },
-    { id: 4, src: four, alt: 'Image 4' },
+    // { id: 4, src: four, alt: 'Image 4' },
     { id: 5, src: five, alt: 'Image 5' },
-    { id: 6, src: six, alt: 'Image 6' },
-    { id: 7, src: seven, alt: 'Image 7' },
-    // { id: 8, src: eight, alt: 'Image 8' },
+    // { id: 6, src: six, alt: 'Image 6' },
+    // { id: 7, src: seven, alt: 'Image 7' },
+    { id: 8, src: eight, alt: 'Image 8' },
     // { id: 9, src: nine, alt: 'Image 9' },
     // { id: 10, src: ten, alt: 'Image 10' },
     // { id: 11, src: eleven, alt: 'Image 11' },
