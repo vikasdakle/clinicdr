@@ -186,7 +186,8 @@ const Home = ({ testimonialsRef }) => {
                             borderRadius: "50px", // Fully rounded
                             padding: "10px 20px", // Adjust padding for pill shape
                             textAlign: "center",
-                            marginLeft: "10px"
+                            marginLeft: "10px",
+                            cursor: "pointer"
                         }} onClick={() => navigate('/review')}>
                         View Review
                         {/* <i className="fa fa-arrow-right ms-2"></i> */}
