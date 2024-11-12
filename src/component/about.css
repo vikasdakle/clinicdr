@@ -2,6 +2,7 @@
 .about-container {
     height: auto;
     overflow: hidden;
+    margin-Bottom:100px;
 }
 
 /* Left Side Styling */
